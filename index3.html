@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script>
+        function escreveNoSpan(msg){
+            msg.innerHTML="Legal, o texto foi alterado!";
+        }
+    </script>
+
+    <style>
+        .cor {color: rgb(0, 38, 255);}
+    </style>
+
+    <title>Index - 3</title>    
+</head>
+<body>
+    <button onclick="msgBtn()">Clique aqui para trocar o texto abaixo.</button><br><br>
+    <span id="textoExibicao" class="cor">Este texto será subsituído ao clicar no botão!</span><br><br>
+
+    <script>
+        function msgBtn(){
+            const msg = document.getElementById("textoExibicao");
+            escreveNoSpan(msg);
+        }
+        
+      
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script>
+        const msg = document.getElementById("TextoExibicao");
+        
+        function msgBtn(){
+            msg.innerHTML="A mensagem no span não funcionou, pois o body não foi carregado.";
+        }
+    </script>
+        
+    <style>
+        .cor {color: rgb(53, 17, 211);}
+    </style>
+
+    <title>Index - 2</title>
+</head>
+<body>
+    <button onclick="msgBtn()">Clique aqui para trocar o texto abaixo.</button><br><br>
+    <span id="TextoExibicao" class="cor">Este texto deve ser alterado ao clicar no botão</span><br><br>
+    <span id="TextoExibicao1"></span>
+    <script>
+        const msg1 = document.getElementById("TextoExibicao1");
+        
+        function msgBtn(){
+            msg1.innerHTML="O texto acima não foi alterado, pois a execução do js foi carregada primeiro que o body.";
+        }
+    </script>
+
+</body>
+</html>
